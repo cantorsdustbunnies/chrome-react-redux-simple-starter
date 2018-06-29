@@ -13,7 +13,7 @@ simply clone the repo, cd, and `npm install`
 from there `npm run build` and add the build directory to chrome through `chrome://extensions` - make sure you have developer mode enabled,
 and click 'load unpacked'
 
-for development, `npm run start:dev` will launch a live server of the react application.
+for development, `npm run start:dev` will launch a live server through webpack. 
 
 Notes and Gotchas:
 
@@ -26,7 +26,7 @@ to do the magic of getting react working. If you need access to chrome extension
 /* global chrome */
 ```
 
-to your component to make react a little less fussy, and then add some existance conditions for the necessary objects inside the react app e.g.:
+to your component to make react a little less fussy, and then add some existence conditions for the necessary objects inside the react app e.g.:
 
 ```javascript
  componentDidMount(){
@@ -36,6 +36,7 @@ to your component to make react a little less fussy, and then add some existance
      //use some spoofed data
    }
 ```
+
 
 If there's a better way, I'd love to hear about it and will update the project accordingly.
 
