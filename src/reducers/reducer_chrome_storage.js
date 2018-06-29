@@ -6,7 +6,6 @@ const DEFAULT_STATE = {
 };
 
 export default function(state = DEFAULT_STATE, action) {
-	console.log('received action:', action);
 	switch (action.type) {
 		case INIT:
 			return Object.assign({}, state, action.payload);
