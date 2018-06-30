@@ -1,10 +1,7 @@
 // For testing purposes only
 // chrome.storage.sync.clear();
 
-const default_state = {
-	colors: ['red', 'green', 'yellow', 'orange', 'blue'],
-	selected: 'red',
-};
+import { default_state } from '../default_state';
 
 // populates state if it doesn't exist, otherwise calls for it.
 chrome.storage.sync.get({ state: default_state }, data => {
